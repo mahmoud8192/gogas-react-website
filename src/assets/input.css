@@ -1,0 +1,124 @@
+/* Tailwind base, components, utilities */
+@import "tailwindcss";
+
+/* Your custom layers */
+@layer components {
+  .btn {
+    font-family: var(--font-main);
+    @apply text-white transition-all cursor-pointer text-[13px] w-fit h-fit p-8 py-1;
+  }
+  .mask {
+    background-color: rgba(45, 45, 45, 1);
+    z-index: -100;
+  }
+  .active {
+    transition: color 0.3s ease-in;
+    color: #8dd245;
+    border-bottom: 3px solid #8dd245;
+  }
+  input {
+    @apply border-none bg-white w-full h-12 rounded-sm text-center;
+  }
+  .bg_img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .btn:hover {
+    background-color: red;
+    opacity: 0.8;
+  }
+  ._play-video-btn-container {
+    position: relative;
+  }
+  ._play-video-btn-container button {
+    z-index: 10;
+  }
+  ._play-video-btn-container::before,
+  ._play-video-btn-container::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-color: #ffffff20;
+    border-radius: 50%;
+    animation: wave 2s ease-in 0s infinite normal none;
+  }
+  ._play-video-btn-container::before {
+    animation-delay: 0.5s;
+  }
+  @keyframes wave {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    40% {
+      opacity: 0.5;
+    }
+    60% {
+      opacity: 0.3;
+    }
+    90% {
+      opacity: 0;
+      transform: scale(3);
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: 'Centuary Gothic';
+    src: url('./fonts/centurygothic.ttf');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Centuary Gothic';
+    src: url('./fonts/centurygothic_bold.ttf');
+    font-weight: 800;
+    font-style: bold;
+  }
+  @font-face {
+    font-family: 'Kumbh Sans';
+    src: url('./fonts/KumbhSans.ttf');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Kumbh Sans';
+    src: url('./fonts/KumbhSans.ttf');
+    font-weight: 800;
+    font-style: bold;
+  }
+  @font-face {
+    font-family: 'Itim';
+    src: url('./fonts/Itim-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+
+@layer theme {
+  :root {
+    --font-main: "Centuary Gothic", sans-serif;
+    --font-second: "Kumbh Sans", sans-serif;
+    --font-third: "Itim", sans-serif;
+
+    /* colors */
+    --color-1: #e3e600;
+    --color-2: #ccff00;
+    --color-3: #99ff00;
+    --color-4: #80ff00;
+    --color-5: #5eff00;
+    --color-6: #54e000;
+    --color-7: #3fc000;
+    --color-8: #137e00;
+    --color-9: #86bb45;
+    --color-10: #97c45f;
+    --color-11: #8dd245;
+    --color-12: #c3c3c3;
+  }
+}

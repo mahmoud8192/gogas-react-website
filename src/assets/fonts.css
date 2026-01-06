@@ -1,0 +1,11 @@
+@layer theme {
+  @font-face {
+    font-family: 'Century Gothic';
+    src: url('./fonts/centurygothic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  :root {
+    --font-sans: 'MyFont';
+  }
+}
