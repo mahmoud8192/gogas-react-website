@@ -22,3 +22,7 @@
 - Structuring a real company website in React
 - Creating consistent design systems with Tailwind
 - Handling responsiveness across devices
+
+  ##Preview
+  Live demo: https://go-gas.netlify.app
+  
