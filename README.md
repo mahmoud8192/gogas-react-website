@@ -1,5 +1,3 @@
-# gogas-react-website
-
 # GoGas Company Website (Frontend)
 
 - A responsive company website built for GoGas.
