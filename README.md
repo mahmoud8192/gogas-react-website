@@ -3,7 +3,7 @@
 - A responsive company website built for GoGas.
   This project focuses on the frontend implementation using React and Tailwind CSS.
 
- Note: This project is a frontend implementation for portfolio purposes .
+ > Note: This project is a frontend implementation for portfolio purposes .
 
  ## Tech Stack
 - React
