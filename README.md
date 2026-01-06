@@ -23,6 +23,6 @@
 - Creating consistent design systems with Tailwind
 - Handling responsiveness across devices
 
-  ##Preview
+  ## Preview
   Live demo: https://go-gas.netlify.app
   
