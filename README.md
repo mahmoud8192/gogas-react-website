@@ -20,7 +20,7 @@
 - Clean UI with Tailwind utility classes
 - Accessible navigation
 
-- ## What I Learned
+  ## What I Learned
 - Structuring a real company website in React
 - Creating consistent design systems with Tailwind
 - Handling responsiveness across devices
